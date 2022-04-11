@@ -1,0 +1,142 @@
+﻿* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #000
+}
+
+.card {
+    width: 350px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.image img {
+    transition: all 0.5s
+}
+
+.card:hover .image img {
+    transform: scale(1.5)
+}
+
+.btn {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.idd {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.idd1 {
+    font-size: 12px
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444444
+}
+
+.btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #aeaeae;
+    font-size: 15px
+}
+
+.text span {
+    font-size: 13px;
+    color: #545454;
+    font-weight: 500
+}
+
+.icons i {
+    font-size: 19px
+}
+
+hr .new1 {
+    border: 1px solid
+}
+
+.join {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: bold
+}
+
+.date {
+    background-color: #ccc
+}
+/*PROGRESSBAR*/
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px
+}
+
+.progress {
+    height: 20px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+    .progress .progress-bar {
+        position: relative;
+        -webkit-animation: animate-positive 2s;
+        animation: animate-positive 2s
+    }
+
+    .progress .progress-value {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        position: absolute;
+        top: -30px;
+        right: -25px
+    }
+
+    .progress .progress-bar:after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        background: #fff;
+        position: absolute;
+        top: -10px;
+        bottom: -10px;
+        right: -5px;
+        z-index: 1;
+        transform: rotate(35deg)
+    }
+
+.h1-progress {
+    text-align: center
+}
+
+.body-progress {
+    background: linear-gradient(to right, #d9a7c7, #fffcdc)
+}

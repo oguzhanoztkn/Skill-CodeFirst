@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Skill_CodeFirst.Models.Siniflar.Yetenekler>
+
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+
+    <link href="../Content/Style.css" rel="stylesheet" />
+</head>
+<body class='snippet-body '>
+    <div class="container mt-4 mb-4 p-3 d-flex justify-content-center ">
+        <div class="card p-4 body-progress">
+            <div class=" image d-flex flex-column justify-content-center align-items-center">
+                <h3>Yazılım Yetenek Kartı</h3>
+                <button class="btn btn-secondary"> <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" /></button> <span class="name mt-3">Oğuzhan Öztekin</span> <span class="idd">Bilgisayar Mühendisi</span>
+                <div class="row d-flex justify-content-center body-progress">
+                    <div class="col-md-12">
+
+                        <div>
+                            <h1 class="mb-5 mt-5"> YETENEKLER</h1>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @foreach (var item in Model)
+                                    {
+                                        <h3 class="progress-title">@item.YetenekAciklama @item.Deger%</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:@item.Deger%; background:#00ff90;">
+                                                <div class="progress-value">65%</div>
+                                            </div>
+                                        </div>
+
+                                    }
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+
+
+</body>
+</html>
